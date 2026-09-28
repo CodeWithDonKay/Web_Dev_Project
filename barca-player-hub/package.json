@@ -1,0 +1,11 @@
+{
+  "name": "barca-player-hub",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Deployment-ready FC Barcelona 2026/27 player profile, squad intelligence and fixture website",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check public/app.js && node --check public/players.js && node --check public/fixtures.js"
+  },
+  "engines": { "node": ">=18" }
+}
