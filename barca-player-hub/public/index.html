@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#07162e" />
+  <meta name="color-scheme" content="dark light" />
+  <title>Barça Player Hub · 2026/27</title>
+  <meta name="description" content="Unofficial FC Barcelona 2026/27 first-team player profiles, season statistics, positional competition, fixtures and results." />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand" role="banner">
+        <div class="brand-mark" aria-hidden="true"><span>B</span></div>
+        <div class="brand-copy">
+          <strong>Barça Player Hub</strong>
+          <span>2026/27 squad intelligence</span>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <button class="nav-item active" data-view="overview"><span class="nav-icon">⌂</span><span>Home</span></button>
+        <button class="nav-item" data-view="squad"><span class="nav-icon">◎</span><span>Players</span></button>
+        <button class="nav-item" data-view="fixtures"><span class="nav-icon">◷</span><span>Fixtures & results</span></button>
+        <button class="nav-item" data-view="positions"><span class="nav-icon">⌘</span><span>Position map</span></button>
+        <button class="nav-item" data-view="live"><span class="nav-icon">↻</span><span>Data centre</span></button>
+      </nav>
+
+      <div class="sidebar-foot">
+        <div class="season-pill">2026/27 season</div>
+        <p>Unofficial supporter site. Player and fixture data can refresh from a live football API.</p>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobileMenu" aria-label="Open navigation">☰</button>
+        <div class="topbar-title">
+          <p id="eyebrow">FC Barcelona · Men's first team</p>
+          <h1 id="pageTitle">Season hub</h1>
+        </div>
+        <div class="topbar-actions">
+          <div class="sync-badge" id="syncBadge"><span class="sync-dot"></span><span id="syncText">Official seed data</span></div>
+          <button class="icon-button" id="themeToggle" aria-label="Toggle theme">◐</button>
+        </div>
+      </header>
+
+      <section id="appView" class="view-container" aria-live="polite"></section>
+      <footer class="site-footer">Barça Player Hub is an unofficial information project and is not affiliated with FC Barcelona.</footer>
+    </main>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="/players.js"></script>
+  <script src="/fixtures.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
