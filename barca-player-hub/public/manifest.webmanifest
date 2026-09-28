@@ -1,0 +1,9 @@
+{
+  "name": "Barça Player Hub",
+  "short_name": "Barça Hub",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07162e",
+  "theme_color": "#07162e",
+  "description": "Unofficial FC Barcelona squad, player profile and fixture hub."
+}
